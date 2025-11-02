@@ -17,7 +17,7 @@ export default function Tasks() {
 
   const fetchTasks = async () => {
     try {
-      const res = await fetch("http://localhost:5000/tasks", {
+      const res = await fetch("https://backend-sigma-blush.vercel.app/api/tasks", {
         method: "GET",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
