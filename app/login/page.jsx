@@ -9,7 +9,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5000/auth/login", {
+      const res = await fetch("https://backend-sigma-blush.vercel.app/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include", 
